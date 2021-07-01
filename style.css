@@ -1,0 +1,96 @@
+.back
+{   background: url("back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: auto;
+	height: 450px;
+}
+.road
+{
+	background-image: url('road.jpg');
+	background-attachment: fixed;
+	background-size: auto;
+}
+#img{
+	width: 180px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+.dbutton{
+	
+	font-family: font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+
+}
+#d{
+	width: 120px;
+	height: 60px;
+	outline: none;
+	color: white;
+	border: 3px solid;
+	border-color:seagreen;
+	background-color: rgb(0, 0, 0);
+	border-radius: 3px;
+	box-shadow: inset 0 0 0 0 #f9e506;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	font-style: italic;
+
+}
+#d:hover
+{
+	box-shadow: inset 300px 0 0 0 #f9e506;
+	cursor: pointer;
+	color: #000;
+}
+.dbutton
+
+{
+	
+	position: relative;
+	align-content: center;
+	left: 550px;
+	top: 150px;
+}
+#d1
+{
+	width: 120px;
+	height: 60px;
+	outline: none;
+	color: white;
+	border: 3px solid;
+	border-color:seagreen;
+	transition: ease-out 0.3s;
+	font-size: 2rem;
+	font-style: italic;
+	border:  3px solid #42FBF2;
+	position: relative;
+	z-index: 1;
+	background-color: black;
+
+}
+#d1:hover
+{
+	cursor: pointer;
+	color: slategray;
+}
+#d1:before
+{
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right:50%;
+	bottom:0%;
+	opacity: 0;
+	content: "";
+	background-color: #42FBF3;
+}
+#d1:hover:before
+{
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
+	z-index: -1;
+}
